@@ -29,6 +29,7 @@ import { userRoute } from './user';
 import { consentRoute } from './consent';
 import { repositoryRoute } from './repository';
 import { opportunitiesRoute } from './opportunities';
+import { alertsRoute } from './alerts';
 
 import { ILogger } from '../logger';
 import { userRolesMiddleware, courseMiddleware } from './middlewares';
@@ -49,6 +50,7 @@ export const routesMiddleware: RoutesMiddleware = (logger: ILogger) => {
   // public routes
   applyRouter(router, certificateRoute(logger));
   applyRouter(router, authRoute());
+  applyRouter(router, alertsRoute());
 
   applyRouter(router, sessionRoute(logger));
   applyRouter(router, publicMeRouter(logger));
