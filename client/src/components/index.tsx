@@ -8,7 +8,6 @@ export * from './LoadingScreen';
 export { MentorSearch } from './MentorSearch';
 export * from './PageLayout';
 export * from './Rating';
-export * from './RegistryBanner';
 export * from './CommentModal';
 export * from './StudentMentorModal';
 export { StudentSearch } from './StudentSearch';

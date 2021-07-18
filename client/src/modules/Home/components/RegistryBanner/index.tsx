@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Alert, Button } from 'antd';
+import { Alert, Button, AlertProps } from 'antd';
 
-export function RegistryBanner() {
+export function RegistryBanner(props: Partial<AlertProps>) {
   return (
     <Alert
       type="info"
@@ -12,6 +12,7 @@ export function RegistryBanner() {
           Register as Mentor
         </Button>
       }
+      {...props}
     />
   );
 }

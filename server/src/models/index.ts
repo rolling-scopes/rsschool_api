@@ -1,12 +1,16 @@
+import { Alert, AlertTypes } from './alert';
 import { Certificate } from './certificate';
+import { Consent, ChannelType } from './consent';
 import { Course } from './course';
 import { CourseEvent } from './courseEvent';
 import { CourseManager } from './courseManager';
 import { CourseTask } from './courseTask';
 import { CourseUser } from './courseUser';
+import { CV } from './cv';
 import { DiscordServer } from './discordServer';
 import { UserGroup } from './userGroup';
 import { Event } from './event';
+import { ExternalAccount, User } from './user';
 import { Feedback } from './feedback';
 import { Mentor } from './mentor';
 import { MentorRegistry } from './mentorRegistry';
@@ -24,18 +28,17 @@ import { Task } from './task';
 import { TaskArtefact } from './taskArtefact';
 import { TaskChecker } from './taskChecker';
 import { TaskInterviewResult } from './taskInterviewResult';
+import { TaskInterviewStudent } from './taskInterviewStudent';
 import { TaskResult } from './taskResult';
 import { TaskSolution } from './taskSolution';
 import { TaskSolutionChecker } from './taskSolutionChecker';
 import { TaskSolutionResult } from './taskSolutionResult';
 import { TaskVerification } from './taskVerification';
-import { ExternalAccount, User } from './user';
-import { Consent, ChannelType } from './consent';
-import { TaskInterviewStudent } from './taskInterviewStudent';
-import { CV } from './cv';
 
 export * from './session';
 export {
+  Alert,
+  AlertTypes,
   Certificate,
   Course,
   CourseEvent,
@@ -76,6 +79,7 @@ export {
 };
 
 export const models = [
+  Alert,
   Certificate,
   Course,
   CourseEvent,
